@@ -1,0 +1,12 @@
+body {
+    background-image: url(../../../download.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h3 {
+    background-color: aqua;
+}
+
+li {
+    background-position: center;
+}
