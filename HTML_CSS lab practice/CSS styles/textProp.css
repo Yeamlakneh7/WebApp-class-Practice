@@ -1,0 +1,16 @@
+.pre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+.html {
+    font-size: larger;
+    font-style: italic;
+}
+
+.lorem {
+    font-weight:bold;
+}
+
+.lighter {
+    font-weight: lighter;
+}
