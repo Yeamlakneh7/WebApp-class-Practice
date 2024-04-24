@@ -1,0 +1,31 @@
+
+div1 img {
+    float: right;
+  }
+
+div2 img {
+    float:none;
+}
+
+.clear-div1 {
+    float: left;
+    padding: 10px;
+    border: 3px solid #73AD21;
+  }
+  
+  .clear-div2 {
+    padding: 10px;
+    border: 3px solid red;
+  }
+  
+  .clear-div3 {
+    float: left;
+    padding: 10px;  
+    border: 3px solid #73AD21;
+  }
+  
+  .clear-div4 {
+    padding: 10px;
+    border: 3px solid red;
+    clear: left;
+  }

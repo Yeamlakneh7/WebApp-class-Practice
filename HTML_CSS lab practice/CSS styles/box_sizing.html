@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Example</title>
+    <style>
+        
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: 10px solid #333;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .content-box {
+            box-sizing: content-box; 
+        }
+
+        .border-box {
+            box-sizing: border-box;
+        }
+
+        p {
+            margin: 0;
+            padding: 10px;
+            background-color: #ddd;
+        }
+
+        
+        .container {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="container content-box">
+            <p>Content Box - Default</p>
+        </div>
+
+        <div class="container border-box">
+            <p>Border Box</p>
+        </div>
+    </div>
+</body>
+</html>

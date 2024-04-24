@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D and 3D Transform Example</title>
+    <style>
+        /* 2D Transform */
+        .box-2d {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 20px;
+            transform: rotate(45deg) scale(1.5) skew(10deg);
+        }
+
+        /* 3D Transform */
+        .box-3d {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 20px;
+            transform: rotateX(45deg) rotateY(45deg) translateZ(50px);
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h2>2D and 3D boxes</h2> 
+    <div class="container">
+        <!-- 2D Transform Example -->
+        <div class="box-2d"></div>
+
+        <!-- 3D Transform Example -->
+        <div class="box-3d"></div>
+    </div>
+</body>
+</html>

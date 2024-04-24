@@ -8,9 +8,26 @@ div {
 }
 .div2 {
     padding: 40px;
+    border: red;
+    border-right-style:dotted;
    
 }
 .div3 {
     padding: 80px;
+    border:medium;
+    border-style: dashed;
    
 }
+
+.div3 {
+   border-radius: 50px;
+    border-color: aqua;
+}
+
+.div2 {
+    border-radius: 10px;
+}
+
+
+
+

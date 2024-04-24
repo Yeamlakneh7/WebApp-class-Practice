@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Example</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            margin-right: 40px;
+            background-color: #3498db;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 2s ease;
+        }
+
+        .btn:hover {
+            background-color: yellow;
+        }
+        .change {
+            height: 100px;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            transition-property: height;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transition-delay: 2s;
+        }
+        .change:hover {
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <button class="btn">Hover Me</button>
+        
+        <div class="change">Hover Me</div>
+    </div>
+</body>
+</html>
