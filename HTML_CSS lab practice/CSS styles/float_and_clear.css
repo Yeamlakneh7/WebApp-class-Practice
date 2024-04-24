@@ -1,10 +1,17 @@
 
-div1 img {
-    float: right;
-  }
-
-div2 img {
-    float:none;
+img {
+    width: 150px;
+    height: 150px;
+ 
+}
+.div1 {
+  margin-bottom: 100px;
+}
+.img1 {
+  float:right;
+}
+.img2 {
+  float: left;
 }
 
 .clear-div1 {
