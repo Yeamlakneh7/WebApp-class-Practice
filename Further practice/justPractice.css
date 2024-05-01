@@ -1,0 +1,55 @@
+/* input[type="text"] {
+    background-color: red;
+} */
+
+div ~ p {
+    background-color: red;
+}
+.image1 {
+    position: relative;
+    left:150px;
+    top:120px;
+}
+.image2 {
+    position: absolute;
+    top:20px;
+    left: 30px;
+}
+.fixed {
+    position: fixed;
+    left: 40px;
+    top: 40px;
+}
+.fix {
+    position: fixed;
+    left: 10;
+    right: 10;
+} 
+.image{
+    background-image: url("../download.jpeg");
+    background-attachment:scroll;
+    border-color: blue;
+    border-width: thick;
+}
+
+.html-image {
+    border-color: blue;
+    border-width: thick;
+}
+
+p {
+    font-style: oblique;
+    text-transform: capitalize;
+    text-indent: 10cm;
+    direction: ltr;
+    text-shadow: 4px 4px 8px black;
+}
+.a:active {
+    color:aqua;
+}
+
+li {
+    list-style-image: -moz-element();
+    list-style-position: inside;
+    font-variant: small-caps;
+}
