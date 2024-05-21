@@ -6,11 +6,7 @@ remove.onclick = removeMethod;
 
 function myfunction() {
     display.innerHTML = Date(); 
-
-}
-function removeMethod() {
-    display.innerHTML = '';
+    
 }
 
 myfunction;
-removeMethod;

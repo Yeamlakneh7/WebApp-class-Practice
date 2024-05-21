@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover and automatic refresh</title>
+</head>
+<body>
+
+<h1 onmouseover="changeText(this)" onmouseout="restoreText(this)">Hover here, and go!</h1>
+
+<p>Refresh works at each 7 seconds.</p>
+
+<script>
+    function changeText(element) {
+        element.innerHTML = "Hover here, and go!";
+    }
+
+    function restoreText(element) {
+        element.innerHTML = "Done!";
+    }
+
+    // Refresh the page after 5 seconds
+    setTimeout(function() {
+        location.reload();
+    }, 7000);
+
+    // Redirect to another page after 10 seconds
+    setTimeout(function() {
+        window.location.href = "what_js_does.html";
+    }, 7000);
+</script>
+
+</body>
+</html>
