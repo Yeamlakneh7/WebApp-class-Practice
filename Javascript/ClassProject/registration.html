@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="" id="myForm">
+        <label>Full Name</label><br>
+        <input type="text" id="name" name="name">
+        <br><label>Phone</label><br>
+        <input type="text" id="phone" name="phone">
+        <br><label>Age</label><br>
+        <input type="text" id="age" name="age">
+        <br><label>Your favorite Color</label><br>
+        <input type="color" name="color" id="color">
+        <br><label>Birthday</label><br>
+        <input type="date">
+        <br><label>Gender</label><br>
+        <label for="">Female<input type="radio" name="gender" id=""> 
+        Male <input type="radio" name="gender"></label><br>
+        <label>Password</label><br>
+        <input type="password" style="width: 500px;"><br>
+        <label>Confirm Password</label><br>
+        <input type="password" style="width: 500px;">
+        <p>Skills</p>
+        <ul>
+            <li><input type="checkbox">HTML</li>
+            <li><input type="checkbox">CSS</li>
+            <li><input type="checkbox">Javascript</li>
+            <li><input type="checkbox">PHP</li>
+        </ul>
+        <label for="">Country</label><br>
+        <select name="" id="" style="width: 100px;"> <br>
+        <option value="">Ethiopia</option>
+        <option value="">USA</option>
+        <option value="">Kenya</option>
+        <option value="">Uganda</option>
+        <option value="">France</option></select>
+        <label for="">Photo</label><br>
+        <input type="file"><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        
+    </form>
+    <label for="">Describe Yourself</label><br>
+    <textarea name="description" id="" cols="65" rows="10"></textarea> <br>    
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event){
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form values
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var phone = document.getElementById("phone").value;
+    
+            // Display form data in textarea
+            document.getElementById("description").value = "Name: " + name + "\nAge: " + age;
+        });
+    
+        document.getElementById("myForm").addEventListener("reset", function(){
+            // Clear textarea when reset button is clicked
+            document.getElementById("description").value = "";
+        });
+    </script>
+</body>
+</html>

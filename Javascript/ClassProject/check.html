@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Submission</title>
+</head>
+<body>
+<h1>Register</h1>
+    
+<form id="myForm">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="phone">Phone Number:</label><br>
+    <input type="number" id="phone" name="phone"><br>
+    <label for="age">Age:</label><br>
+    <input type="age" id="age" name="age"><br>
+    <label for="color">Your Favorite Color:</label><br>
+    <input type="color" id="color" name="color"><br>
+    <label for="birth">Birth Day:</label><br>
+    <input type="date" id="birth" name="birth"><br>
+    <label for="gender">Gender:</label><br>
+    Female<input type="radio" id="gender" name="gender">
+    Male<input type="radio" id="gender" name="gender"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"> <br>
+    <label for="password">Confirm Password:</label><br>
+    <input type="password" id="confirm" name="confirm"> <br>
+    <label for="skills">Skills:</label><br>
+    <ul id="list" name="list">
+        <li><input type="checkbox" name="html" id="html">HTML</li>
+        <li><input type="checkbox" name="css" id="css">CSS</li>
+        <li><input type="checkbox" name="js" id="js">Javascript</li>
+        <li><input type="checkbox" name="php" id="php">PHP</li>
+    </ul>
+    <label for="country">Country</label><br>
+    <select name="country" id="country" style="width: 100px;"> <br>
+    <option value="Ethiopia">Ethiopia</option>
+    <option value="USA">USA</option>
+    <option value="Kenya">Kenya</option></select> <br>
+    <label for="photo">Photo:</label><br>
+    <input type="file" id="photo" name="photo"><br>
+    
+    
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+<textarea id="description" rows="7" cols="50"></textarea>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event){
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form values
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+        var age = document.getElementById("age").value;
+        var favorite = document.getElementById("color").value;
+        var birth = document.getElementById("birth").value;
+        var gender = document.getElementById("gender").value;
+        var photo = document.getElementById("photo").value;
+        
+        // Display form data in textarea
+        document.getElementById("description").value = "Name: " + name  +  "\nAge: " + age + "\nPhone: " + phone + "\nFavorite Color: " + favorite + "\nBirthday: " + birth + "\nGender: " + gender; 
+        // + "\nPhoto: " + photo; 
+        // +  ;
+    });
+
+    document.getElementById("myForm").addEventListener("reset", function(){
+        // Clear textarea when reset button is clicked
+        document.getElementById("description").value = "";
+    });
+</script>
+
+</body>
+</html>
