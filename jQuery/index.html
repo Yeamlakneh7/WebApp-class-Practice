@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Create a new paragraph element
+      var $paragraph = $('<p></p>').text('This is a new paragraph added to the document body. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vitae qui saepe dicta magnam asperiores rem id deleniti, libero consequuntur facilis voluptatibus est numquam? Recusandae illo pariatur quo eveniet at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem quas itaque nihil amet architecto, ex animi cumque necessitatibus! Id fugit distinctio consequuntur. Culpa optio facilis ex doloremque laboriosam. Ipsa? ');
+
+      // Append the paragraph to the end of the document body
+      $('body').append($paragraph);
+    });
+  </script>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
