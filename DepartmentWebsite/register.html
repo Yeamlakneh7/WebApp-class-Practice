@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+    <script>
+        function validateForm() {
+            const studentId = document.getElementById('studentId').value;
+            const name = document.getElementById('name').value;
+            const password = document.getElementById('password').value;
+            const profilePicture = document.getElementById('profilePicture').files[0];
+
+            if (!studentId || !name || !password || !profilePicture) {
+                alert('All fields are required.');
+                return false;
+            }
+
+            const allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
+            const fileExtension = profilePicture.name.split('.').pop().toLowerCase();
+
+            if (!allowedExtensions.includes(fileExtension)) {
+                alert('Please upload a valid image file (jpg, jpeg, png, gif).');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="logo">
+            <nav>
+                <img src="https://i.pinimg.com/736x/e5/9a/10/e59a109c0a4e54f3e8622058936a1ce1.jpg" alt="AAU Logo">
+                <h1 class="cncs">College of Natural and Computational Sciences</h1>
+                <ul class="headerContents">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Register</h2> <br>
+            <form action="http://localhost/php_practice/register.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" required> <br> <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required> <br> <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required> <br> <br>
+                <label for="profilePicture">Profile Picture:</label>
+                <input type="file" id="profilePicture" name="profilePicture" required> <br> <br>
+                <input type="submit" value="Register"/>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Addis Ababa University. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <script>
+        function validateLoginForm() {
+            const studentId = document.getElementById('studentId').value;
+            const password = document.getElementById('password').value;
+
+            if (!studentId || !password) {
+                alert('All fields are required.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="logo">
+            <nav>
+                <img src="https://i.pinimg.com/736x/e5/9a/10/e59a109c0a4e54f3e8622058936a1ce1.jpg" alt="AAU Logo">
+                <h1 class="cncs">College of Natural and Computational Sciences</h1>
+                <ul class="headerContents">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Login</h2> <br>
+            <form action="login.php" method="post" onsubmit="return validateLoginForm()">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" required> <br> <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required> <br> <br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Addis Ababa University. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

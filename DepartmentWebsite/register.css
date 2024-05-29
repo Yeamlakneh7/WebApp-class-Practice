@@ -1,0 +1,29 @@
+/* Add styles for the registration form */
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#registerForm label {
+    font-weight: bold;
+}
+
+#registerForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registerForm button {
+    padding: 10px;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#registerForm button:hover {
+    background-color: darkslateblue;
+}
